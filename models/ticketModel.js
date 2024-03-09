@@ -20,14 +20,26 @@ const ticketSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-    imageBuyer: {
+  contact: {
     type: String,
     required: true,
   },
-  status:{
-    type:String,
-    required:true
-  }
+  buyer: {
+    type: String,
+    required: true,
+  },
+  PurchaseDate: {
+    type: String,
+    required: true,
+  },
+  imageBuyer: {
+    type: String,
+    required: true,
+  },
+  status: {
+    type: String,
+    required: true,
+  },
 });
 
 const TicketModel = mongoose.model("Ticket", ticketSchema);
